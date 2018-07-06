@@ -1,0 +1,180 @@
+/* Basic elements */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fefde3;
+  color: #2d1812;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 1rem;
+  border: 1px solid #aaa;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input[type='text']:focus {
+  border: 1px solid #ba2c1d;
+}
+
+/* Common */
+
+.button {
+  font-size: 1em;
+  padding: 1.25rem 2.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: #ba2c1d;
+  cursor: pointer;
+}
+
+#wrapper {
+  margin-top: 6rem;
+  width: 50rem;
+}
+
+/* Intro */
+
+#intro-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#intro-container h1 {
+  margin: 0;
+}
+
+/* Add todo */
+
+#add-todo-container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.add-todo {
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+
+/* Todos list */
+
+#todos-list-container {
+  margin-bottom: 3rem;
+}
+
+.todos-list {
+  background: white;
+  border: 1px solid #aaa;
+  padding: 0;
+}
+
+/* Todo */
+
+.todo {
+  display: flex;
+  list-style-type: none;
+  border-bottom: 1px solid #aaa;
+  align-items: center;
+  padding: 1.5rem;
+}
+.todo:last-child {
+  border-bottom: none;
+}
+.todo:nth-child(odd) {
+  background: #fafafa;
+}
+
+.checkbox-container {
+  border: 1px solid #aaa;
+  margin-right: 1.5rem;
+  background: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tick-icon {
+  display: none;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.description {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.actions-container {
+  display: flex;
+}
+
+.action {
+  margin-right: 1rem;
+  list-style-type: none;
+}
+.action:last-child {
+  margin-right: 0;
+}
+
+.delete-todo {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cross-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.reorder-container {
+  cursor: move;
+}
+
+.reorder-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+/* Completed todo */
+
+.complete {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+.complete .tick-icon {
+  display: block;
+}
+
+/* Summary */
+
+#summary-container {
+  text-align: right;
+}
